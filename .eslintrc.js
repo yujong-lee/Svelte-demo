@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
   },
   extends: [
     'airbnb-base',
@@ -11,6 +12,10 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 12,
     sourceType: 'module',
+  },
+  globals: {
+    context: 'readonly',
+    given: 'readonly',
   },
   plugins: [
     'svelte3',
@@ -26,5 +31,6 @@ module.exports = {
     'svelte3/typescript': true,
   },
   rules: {
+    'import/no-extraneous-dependencies': 'off',
   },
 };
