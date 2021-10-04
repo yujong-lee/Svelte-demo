@@ -1,11 +1,11 @@
-import svelte from 'rollup-plugin-svelte';
 import commonjs from '@rollup/plugin-commonjs';
-import resolve from '@rollup/plugin-node-resolve';
-import livereload from 'rollup-plugin-livereload';
-import { terser } from 'rollup-plugin-terser';
-import sveltePreprocess from 'svelte-preprocess';
-import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
+import livereload from 'rollup-plugin-livereload';
+import resolve from '@rollup/plugin-node-resolve';
+import svelte from 'rollup-plugin-svelte';
+import sveltePreprocess from 'svelte-preprocess';
+import { terser } from 'rollup-plugin-terser';
+import typescript from '@rollup/plugin-typescript';
 
 const production = !process.env.ROLLUP_WATCH;
 
